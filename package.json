@@ -1,0 +1,27 @@
+{
+  "author": "Josh Goldberg <joshuakgoldberg@outlook.com>",
+  "bin": {
+      "tscf": "./bin/tsc-fancy",
+      "tsc-fancy": "./bin/tsc-fancy"
+  },
+  "description": "Snazzy utilities around the TypeScript CLI.",
+  "devDependencies": {
+    "tslint": "5.9.1",
+    "typescript": "^2.7.1"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "tscf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuakgoldberg/tsc-fancy.git"
+  },
+  "scripts": {
+    "src": "npm run src:tsc && npm run src:tslint",
+    "src:tsc": "tsc -p .",
+    "src:tslint": "tslint -c tslint.json -p tsconfig.json -t stylish",
+    "src:tslint-fix": "npm run src:tslint -- --fix",
+    "watch": "tsc -p . -w"
+  },
+  "version": "1.0.0"
+}
