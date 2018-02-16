@@ -13,7 +13,7 @@ export const execTsc = (options: ExecTscOptions): ChildProcess => {
     const tsc = options.tsc === undefined
         ? "tsc"
         : options.tsc;
-    const args = options.args === undefined
+    const args = options.args.length === 0
         ? ""
         : ` ${options.args.join(" ")}`;
     const childProcess = exec(`${tsc}${args}`);
