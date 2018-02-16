@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "main": "src/index.js",
-  "name": "tscf",
+  "name": "tsc-fancy",
   "repository": {
     "type": "git",
     "url": "https://github.com/joshuakgoldberg/tsc-fancy.git"
@@ -24,5 +24,6 @@
     "src:tslint-fix": "npm run src:tslint -- --fix",
     "watch": "tsc -p . -w"
   },
+  "types": "src/index.d.ts",
   "version": "1.0.0"
 }
