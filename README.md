@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/tsc-fancy.svg)](https://www.npmjs.com/package/tsc-fancy)
 [![Downloads](https://img.shields.io/npm/dm/tsc-fancy.svg)](https://www.npmjs.com/package/tsc-fancy)
 
-Snazzy utilities around the TypeScript CLI.
+✨ Snazzy utilities around the TypeScript CLI. ✨
 
 ```shell
 npm install --global tsc-fancy
@@ -21,7 +21,7 @@ tscf
 
 Some user-requested features are too esoteric for TypeScript to add them.
 That's fine!
-We can just stick them here, outside of the main repository.
+We can just stick them here, outside of the main repository. 🔥
 
 Everything passed to the `tsc-fancy` CLI that it doesn't recognize is given directly to `tsc`.
 Thus, you can use `tsc-fancy` as a drop-in replacement for `tsc`.
@@ -127,4 +127,4 @@ execTsc({
 
 ## Contributing
 
-See [Contributing.md](./CONTRIBUTING.md).
+🙌 See [Contributing.md](./CONTRIBUTING.md). 🙌
