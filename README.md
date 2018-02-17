@@ -1,4 +1,7 @@
 # `tsc-fancy`
+[![Build Status](https://travis-ci.org/joshuakgoldberg/tsc-fancy.svg?branch=master)](https://travis-ci.org/joshuakgoldberg/tsc-fancy)
+[![npm version](https://badge.fury.io/js/tsc-fancy.svg)](https://www.npmjs.com/package/tsc-fancy)
+[![Downloads](https://img.shields.io/npm/dm/tsc-fancy.svg)](https://www.npmjs.com/package/tsc-fancy)
 
 Snazzy utilities around the TypeScript CLI.
 
