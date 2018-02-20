@@ -34,22 +34,7 @@ export const parseArgv = (argv: string[]): ExecTscOptions => {
                 break;
 
             case "--replace":
-                options.replacers.set(new RegExp(argv[i + 1]), argv[i + 2]);
-                i += 3;
-                break;
-
-            case "--replaceG":
-                options.replacers.set(new RegExp(argv[i + 1], "g"), argv[i + 2]);
-                i += 3;
-                break;
-
-            case "--replaceGI":
                 options.replacers.set(new RegExp(argv[i + 1], "gi"), argv[i + 2]);
-                i += 3;
-                break;
-
-            case "--replaceI":
-                options.replacers.set(new RegExp(argv[i + 1], "i"), argv[i + 2]);
                 i += 3;
                 break;
 

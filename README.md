@@ -48,18 +48,10 @@ See [TypeScript#21295](https://github.com/Microsoft/TypeScript/issues/21295).
 ### `--replace`
 
 Replaces TSC characters with your own.
-Each replacement is converted to a `RegExp`.
+Each replacement is converted to a `RegExp` with the `/gi` flag.
 
 ```shell
 > tsc-fancy --replace error "Oh dearest me!" --pretty false
-
-src/file.ts(1,5): Oh dearest me! TS2322: Type '"no"' is not assignable to type 'number'.
-```
-
-Use `--replaceG`, `--replaceGI`, and `--replaceI` to add the `/g` and/or `/i` `RegExp` flags.
-
-```shell
-> tsc-fancy --replaceG error "Oh dearest me!" --pretty false
 
 src/file.ts(1,5): Oh dearest me! TS2322: Type '"no"' is not assignable to type 'number'.
 src/file.ts(2,5): Oh dearest me! TS2322: Type '"yes"' is not assignable to type 'number'.
@@ -67,7 +59,7 @@ src/file.ts(2,5): Oh dearest me! TS2322: Type '"yes"' is not assignable to type 
 
 ### `--tsc`
 
-Alias of the tsc executable to [`exec`](linktonodeexec), if not `"tsc"`.
+Alias of the tsc executable to [`exec`](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback), if not `"tsc"`.
 
 ```shell
 > tsc-fancy --tsc ../TypeScript/built/local/tsc.js
@@ -110,7 +102,7 @@ Regular expressions with text to replace them with.
 ```typescript
 execTsc({
     replacers: new Map([
-        [/error/, "Oh dearest me!"],
+        [/error/gi, "Oh dearest me!"],
     ]),
 });
 ```
